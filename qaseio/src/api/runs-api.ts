@@ -170,7 +170,7 @@ export const RunsApiAxiosParamCreator = function (configuration?: Configuration)
          * @summary Get a specific run.
          * @param {string} code Code of project, where to search entities.
          * @param {number} id Identifier.
-         * @param {string} [include] Add this param to include a list of test cases into response. Possible value: cases 
+         * @param {string} [include] Include a list of related entities IDs into response. Should be separated by comma. Possible values: cases, defects 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -218,7 +218,7 @@ export const RunsApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {object} [filters] 
          * @param {number} [limit] A number of entities in result set.
          * @param {number} [offset] How many entities should be skipped.
-         * @param {string} [include] Add this param to include a list of test cases into response. Possible value: cases 
+         * @param {string} [include] Include a list of related entities IDs into response. Should be separated by comma. Possible values: cases, defects 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -366,7 +366,7 @@ export const RunsApiFp = function(configuration?: Configuration) {
          * @summary Get a specific run.
          * @param {string} code Code of project, where to search entities.
          * @param {number} id Identifier.
-         * @param {string} [include] Add this param to include a list of test cases into response. Possible value: cases 
+         * @param {string} [include] Include a list of related entities IDs into response. Should be separated by comma. Possible values: cases, defects 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -381,7 +381,7 @@ export const RunsApiFp = function(configuration?: Configuration) {
          * @param {object} [filters] 
          * @param {number} [limit] A number of entities in result set.
          * @param {number} [offset] How many entities should be skipped.
-         * @param {string} [include] Add this param to include a list of test cases into response. Possible value: cases 
+         * @param {string} [include] Include a list of related entities IDs into response. Should be separated by comma. Possible values: cases, defects 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -450,7 +450,7 @@ export const RunsApiFactory = function (configuration?: Configuration, basePath?
          * @summary Get a specific run.
          * @param {string} code Code of project, where to search entities.
          * @param {number} id Identifier.
-         * @param {string} [include] Add this param to include a list of test cases into response. Possible value: cases 
+         * @param {string} [include] Include a list of related entities IDs into response. Should be separated by comma. Possible values: cases, defects 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -464,7 +464,7 @@ export const RunsApiFactory = function (configuration?: Configuration, basePath?
          * @param {object} [filters] 
          * @param {number} [limit] A number of entities in result set.
          * @param {number} [offset] How many entities should be skipped.
-         * @param {string} [include] Add this param to include a list of test cases into response. Possible value: cases 
+         * @param {string} [include] Include a list of related entities IDs into response. Should be separated by comma. Possible values: cases, defects 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -537,7 +537,7 @@ export class RunsApi extends BaseAPI {
      * @summary Get a specific run.
      * @param {string} code Code of project, where to search entities.
      * @param {number} id Identifier.
-     * @param {string} [include] Add this param to include a list of test cases into response. Possible value: cases 
+     * @param {string} [include] Include a list of related entities IDs into response. Should be separated by comma. Possible values: cases, defects 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RunsApi
@@ -553,7 +553,7 @@ export class RunsApi extends BaseAPI {
      * @param {object} [filters] 
      * @param {number} [limit] A number of entities in result set.
      * @param {number} [offset] How many entities should be skipped.
-     * @param {string} [include] Add this param to include a list of test cases into response. Possible value: cases 
+     * @param {string} [include] Include a list of related entities IDs into response. Should be separated by comma. Possible values: cases, defects 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RunsApi
